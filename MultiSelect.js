@@ -15,6 +15,48 @@ function MultiSelect( id , colors = {}){
 	};
 	this.data = {} ;
 	this.id = id ;
+	this.max = null ;
+	this.min = null ;
+	var self = this ;
+	this.errors = {
+		all : [] ,
+		codes: {
+			'minErr': "More items should be selected.",
+			'maxErr':"Cannot select more items.",
+			'domReadErr':"Error Reading MultiSelect Element from DOM.",
+			'chooseAllErr':"Cannot Choose All Items when there is a limit." 
+		},
+		add : function( errCode ){
+			if(this.all.indexOf( errCode ) == -1){
+				this.all.push( errCode ) ;
+			}
+		},
+		remove: function( errCode ){
+			if(this.all.indexOf( errCode ) != -1){
+				this.all.splice( this.indexOf(errCode, 1) );
+			}
+		},
+		getAll : function(){
+			let toReturn = [] ;
+			this.all.forEach( function( errCode ){
+				if(this.codes.hasOwnProperty( errCode )){
+					toReturn.push( this.codes[errCode] ) ;
+				}else{
+					toReturn.push( errCode ) ;
+				}
+			}, this);
+			return toReturn ;
+		},
+		show : function(){
+			if( this.all.length > 0 ){
+				let str = "Errors: " + this.getAll().join(", ") ;
+				this.all.splice(0, this.all.length);
+				// console.log(str);
+				alert( str );				
+			}
+		} 
+	};
+	// chosen keys must be strings
 	this.chosen = [] ;
 	this.domNode = null ;
 	this.colorsUpdated = false ;
@@ -62,9 +104,18 @@ function MultiSelect( id , colors = {}){
 		return false ;	
 	}	
 	this.choose = function( key ){
-		key = Number(key);
-		if(this.isValidKey(key)){
-			this.chosen.push(key);
+		if( this.max != null ){
+			if(this.chosen.length < this.max ){
+				if(this.isValidKey(key)){
+					this.chosen.push(key.toString());
+				}				
+			}else{
+				this.errors.add('maxErr') ;
+			}
+		}else{
+			if(this.isValidKey(key)){
+				this.chosen.push(key.toString());
+			}			
 		}
 		this.updateGUI();
 	}
@@ -83,25 +134,31 @@ function MultiSelect( id , colors = {}){
 		}
 		this.updateGUI() ;
 	}
-	
+
 	this.chooseAll = function( ){
-		for( key in this.data){
-			this.choose( key );
+		if(this.max == null){
+			for( key in this.data){
+				this.choose( key );
+			}
+		}else{
+			this.errors.add('chooseAllErr') ;
+			this.errors.show() ;
 		}
+
 	}
 	this.unChooseAll = function(){
 		this.chosen.splice(0, this.chosen.length ) ;
 		this.updateGUI() ;
 	}
 	this.isChosenKey = function( key ){
-		if( ( this.chosen.indexOf(Number(key)) > -1) || ( this.chosen.indexOf(key) > -1) ){
+		if( ( this.chosen.indexOf( key ) > -1 ) || ( this.chosen.indexOf( key.toString() ) > -1 ) ){	
 			return true ;
 		}else{
 			return false ;
 		}
 	}
 	this.findOptionByKey = function( key ){
-		return this.domNode.querySelector("div[data-value='"+key+"']");
+		return this.domNode.querySelector("div[data-value='"+ key +"']");
 	}	
 	this.updateGUI = function(){
 		for( key in this.data ){
@@ -112,7 +169,9 @@ function MultiSelect( id , colors = {}){
 				this.hideIcon( opt );
 			}
 		}
+		this.errors.show() ;
 		this.updateColors() ;
+		this.updateInputValue() ;
 	}
 	this.updateColors = function(){
 		if( ! this.colorsUpdated){
@@ -150,7 +209,7 @@ function MultiSelect( id , colors = {}){
 		var that = this ;
 		for( key in this.data ){
 			this.findOptionByKey(key).addEventListener("click", function(){
-				let keyVal = Number(this.dataset.value) ;
+				let keyVal = this.dataset.value ;
 				if(that.isChosenKey(keyVal)){
 					that.unChoose( keyVal );
 				}else{
@@ -169,6 +228,12 @@ function MultiSelect( id , colors = {}){
 	this.read = function ( multiSelect ){
 		this.domNode = multiSelect ;
 		this.sn = multiSelect.dataset.sn ;
+		if( this.domNode.dataset.min != undefined){
+			this.min = this.domNode.dataset.min ;
+		}
+		if( this.domNode.dataset.max != undefined){
+			this.max = this.domNode.dataset.max ;
+		}		
 		var options = multiSelect.querySelectorAll("div.ms-option");
 		this.data = {} ;
 		for( opt in options ){
@@ -180,7 +245,9 @@ function MultiSelect( id , colors = {}){
 			}
 		}
 		this.bindEvents() ;
-		// this.updateGUI() ;
+	}
+	this.updateInputValue = function(){
+		document.querySelector("input[name='"+ this.id + "'").value = this.chosen.join(", ") ;
 	}
 	/*
 	Reading ID from param of constructor function

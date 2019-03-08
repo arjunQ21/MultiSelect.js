@@ -21,6 +21,7 @@ div.ms-title-text{
 	width: 70%;
 	font-size: 110%;
 	border-right: 1px solid #999 ;
+	color: #444 ;
 }
 div.ms-title-right{
 	width: 25%;
@@ -49,7 +50,8 @@ div.ms-items{
 	align-items: center ;
 	justify-content: center ;
 	flex-wrap: wrap ;
-	height: 200px;
+	min-height: 70px ;
+	max-height: 200px ;
 	overflow-y: scroll;
 	background: #f9f9f9 ;
 }

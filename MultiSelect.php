@@ -9,6 +9,10 @@ class MultiSelect
 		'3'=>'shyam'
 	];
 	public $chosen = [] ;
+	public $color = [
+		'background'=>'lightgreen',
+		'selected'=>'green'
+	];
 	private $id = 'ms';
 	public $max = NULL ;
 	public $min = NULL ;
@@ -21,12 +25,16 @@ class MultiSelect
 			],
 		'chosen'=>[],
 		'id'=>'ms1',
-		'max'=>NULL,
-		'min'=>NULL	
+		'max'=>99999,
+		'min'=> 0,
+		'color'=> [
+				'background'=>'green',
+				'selected'=>'lightgreen'
+			]	
 	]; 
-	public function construct($id, $data = [], $title = 'Multi Select Title', $chosen = []){
-		if( ! ctype_alpha($id)){
-			throw new Exception("ID must have letters");
+	public function __construct($id, $data = [], $title = 'Multi Select Title', $chosen = []){
+		if( ! ctype_alpha($id) ){
+			throw new Exception("ID must have letters.");
 		}
 		$this->id = $id ;
 		if(count($data) > 0) $this->data = $data ;
@@ -41,6 +49,7 @@ class MultiSelect
 		$arr['id'] = $this->id ;
 		$arr['max'] = $this->max ;
 		$arr['min'] = $this->min ;
+		$arr['color'] = $this->color ;
 		return $arr ;
 	}
 	public function render(){

@@ -1,17 +1,7 @@
-<?php
-echo "<pre>";
-
-print_r($mst['chosen']);
-
-echo "Chosen: ";
-var_dump(in_array("arju", $mst['chosen']));
-// var_dump(in_array("arju", [1,23,'arju']));
-echo "</pre>";
-?>
 <div class="multi-select" data-sn = "1" id = '<?=$mst['id']?>' <?php 
 	if( ! is_null($mst['max'])) echo " data-max = '".$mst['max']."'";
 	if( ! is_null($mst['min'])) echo " data-min = '".$mst['min']."'";
-?>>
+?> >
 	<div class="ms-title">
 		<div class="ms-title-text">
 			<span><?=$mst['title']?></span>
@@ -47,5 +37,5 @@ echo "</pre>";
 </div>
 <input type='hidden' name='<?=$mst['id']?>' value = ''>
 <script>
-	var <?=$mst['id']?> = new MultiSelect( '<?=$mst['id']?>' );
+	var <?=$mst['id']?> = new MultiSelect( '<?=$mst['id']?>', <?php echo json_encode($mst['color']) ?> );
 </script>
