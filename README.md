@@ -57,4 +57,19 @@ Finally, to display the GUI prepared above, you can use the render() function.
   
 $ms->render() ;  
   
-The value of input tag is dynamically changed with javaScript from browser, once user chooses or unchooses some options.  
+The value of input tag is dynamically changed with javaScript from browser, once user chooses or unchooses some options. 
+
+  
+  # FrontEnd Js
+  The string "msd" passed above as an argument to the MultiSelect class, becomes a variable in javaScript. \
+  This variable is scoped globally. 
+  You can change colors from js too as:
+    
+    msd.color.background = 'red' ;
+    
+  to get the array of chosen items dynamically in js, you can do as such:  
+  
+  msd.chosen
+  
+  
+  
