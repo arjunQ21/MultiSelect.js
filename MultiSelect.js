@@ -83,6 +83,7 @@ function MultiSelect( id , colors = {}){
 		}
 		this.updateGUI() ;
 	}
+	
 	this.chooseAll = function( ){
 		for( key in this.data){
 			this.choose( key );
