@@ -29,11 +29,11 @@ Adding Select Data:
 This data must be an associative array, having key and value pairs.   
 Comparing with <select> tag:  
     
-  &lt;select name = 'n1'&gt;
-    &lt;option value = 'v1'&gt; Value1 &lt;/option&gt;
-    &lt;option value = 'v2'&gt; Value2 &lt;/option&gt;
-  &lt;/select&gt;
-  
+  &lt;select name = 'n1'&gt;    
+    &lt;option value = 'v1'&gt; Value1 &lt;/option&gt;    
+    &lt;option value = 'v2'&gt; Value2 &lt;/option&gt;    
+  &lt;/select&gt;    
+    
 Here, n1 is equivalent to "msd".  
 The structure of data array is like:  
   ['v1' => 'Value1', 'v2'=>'Value2']  
