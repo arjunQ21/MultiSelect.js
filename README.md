@@ -20,19 +20,19 @@ You can try implementing this plugin for other languages too, it's not that hard
  Creating new Instance:  
    
 $ms = new MultiSelect( "msd" );  
-This string "msd" is the id of the multi-select div element and name of <input> tag, whose value can be sent to the server, from forms.
+This string "msd" is the id of the multi-select div element and name of input tag, whose value can be sent to the server, from forms.
   
 Adding Title:  
 $ms->title = "Select Districts" ;  
   
 Adding Select Data:  
 This data must be an associative array, having key and value pairs.   
-Comparing with <select> tag:  
+Comparing with select tag:  
     
-  &lt;select name = 'n1'&gt;  <br>  
-    &lt;option value = 'v1'&gt; Value1 &lt;/option&gt;  <br>  
-    &lt;option value = 'v2'&gt; Value2 &lt;/option&gt;   <br> 
-  &lt;/select&gt;    <br>
+  &lt;select name = 'n1'&gt;  \
+    &lt;option value = 'v1'&gt; Value1 &lt;/option&gt;  \
+    &lt;option value = 'v2'&gt; Value2 &lt;/option&gt;  \
+  &lt;/select&gt;  \
     
 Here, n1 is equivalent to "msd".  
 The structure of data array is like:  
