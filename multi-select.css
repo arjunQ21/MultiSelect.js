@@ -1,0 +1,82 @@
+body{
+	font-family: sans-serif; ;
+}
+div.multi-select{
+	margin: 10px 0px;
+	border: 1px solid #bbb ;
+	border-radius: 5px;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	max-width: 300px;
+}
+div.ms-title{
+	display: flex ;
+	align-items: center ;
+	justify-content: center ;
+	padding: 0px 0px 10px 0px;
+	overflow: hidden ;
+}
+div.ms-title-text{
+	width: 70%;
+	font-size: 110%;
+	border-right: 1px solid #999 ;
+}
+div.ms-title-right{
+	width: 25%;
+	display: flex ;
+	align-items: center ;
+	justify-content: space-around; ;
+}
+div.ms-title-right>div{
+	border: 2px solid #999 ;
+	padding: 3px;
+	transition: .5s ;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+div.ms-title-right>div:hover{
+	background: #eee ;
+}
+div.ms-title-right>div>i{
+	color: #666 !important;
+}
+div.ms-items{
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	padding: 5px;
+	display: flex ;
+	align-items: center ;
+	justify-content: center ;
+	flex-wrap: wrap ;
+	height: 200px;
+	overflow-y: scroll;
+	background: #f9f9f9 ;
+}
+div.ms-option{	background: green ;
+	border-radius: 10px ;
+	display: flex ;
+	align-items: center ;
+	justify-content: center ;
+	flex-wrap: nowrap; 
+	overflow: hidden;
+	margin: 5px;
+	cursor: pointer;
+	transition: .4s ;
+	box-sizing: border-box;
+}
+div.ms-option-text{
+	padding: 5px 10px;
+	overflow: hidden ;
+	background: lightgreen ;
+}
+div.ms-option-icon{
+	margin:0px 5px;
+	display: flex ;
+	align-items: center;
+	justify-content: center ;
+	display: none;
+}
+div.ms-option-icon i{
+	color: #fff !important;
+}

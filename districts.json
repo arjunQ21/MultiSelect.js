@@ -1,0 +1,377 @@
+[
+    {
+        "id": 1,
+        "district": "Achham",
+        "disabled": 0
+    },
+    {
+        "id": 2,
+        "district": "Arghakhanchi",
+        "disabled": 0
+    },
+    {
+        "id": 3,
+        "district": "Baglung",
+        "disabled": 0
+    },
+    {
+        "id": 4,
+        "district": "Baitadi",
+        "disabled": 0
+    },
+    {
+        "id": 5,
+        "district": "Bajhang",
+        "disabled": 0
+    },
+    {
+        "id": 6,
+        "district": "Bajura",
+        "disabled": 0
+    },
+    {
+        "id": 7,
+        "district": "Banke",
+        "disabled": 0
+    },
+    {
+        "id": 8,
+        "district": "Bara",
+        "disabled": 0
+    },
+    {
+        "id": 9,
+        "district": "Bardiya",
+        "disabled": 0
+    },
+    {
+        "id": 10,
+        "district": "Bhaktapur",
+        "disabled": 0
+    },
+    {
+        "id": 11,
+        "district": "Bhojpur",
+        "disabled": 0
+    },
+    {
+        "id": 12,
+        "district": "Chitwan",
+        "disabled": 0
+    },
+    {
+        "id": 13,
+        "district": "Dadeldhura",
+        "disabled": 0
+    },
+    {
+        "id": 14,
+        "district": "Dailekh",
+        "disabled": 0
+    },
+    {
+        "id": 15,
+        "district": "Dang Deukhuri",
+        "disabled": 0
+    },
+    {
+        "id": 16,
+        "district": "Darchula",
+        "disabled": 0
+    },
+    {
+        "id": 17,
+        "district": "Dhading",
+        "disabled": 0
+    },
+    {
+        "id": 18,
+        "district": "Dhankuta",
+        "disabled": 0
+    },
+    {
+        "id": 19,
+        "district": "Dhanusa",
+        "disabled": 0
+    },
+    {
+        "id": 20,
+        "district": "Dolakha",
+        "disabled": 0
+    },
+    {
+        "id": 21,
+        "district": "Dolpa",
+        "disabled": 0
+    },
+    {
+        "id": 22,
+        "district": "Doti",
+        "disabled": 0
+    },
+    {
+        "id": 23,
+        "district": "Gorkha",
+        "disabled": 0
+    },
+    {
+        "id": 24,
+        "district": "Gulmi",
+        "disabled": 0
+    },
+    {
+        "id": 25,
+        "district": "Humla",
+        "disabled": 0
+    },
+    {
+        "id": 26,
+        "district": "Ilam",
+        "disabled": 0
+    },
+    {
+        "id": 27,
+        "district": "Jajarkot",
+        "disabled": 0
+    },
+    {
+        "id": 28,
+        "district": "Jhapa",
+        "disabled": 0
+    },
+    {
+        "id": 29,
+        "district": "Jumla",
+        "disabled": 0
+    },
+    {
+        "id": 30,
+        "district": "Kailali",
+        "disabled": 0
+    },
+    {
+        "id": 31,
+        "district": "Kalikot",
+        "disabled": 0
+    },
+    {
+        "id": 32,
+        "district": "Kanchanpur",
+        "disabled": 0
+    },
+    {
+        "id": 33,
+        "district": "Kapilvastu",
+        "disabled": 0
+    },
+    {
+        "id": 34,
+        "district": "Kaski",
+        "disabled": 0
+    },
+    {
+        "id": 35,
+        "district": "Kathmandu",
+        "disabled": 0
+    },
+    {
+        "id": 36,
+        "district": "Kavrepalanchok",
+        "disabled": 0
+    },
+    {
+        "id": 37,
+        "district": "Khotang",
+        "disabled": 0
+    },
+    {
+        "id": 38,
+        "district": "Lalitpur",
+        "disabled": 0
+    },
+    {
+        "id": 39,
+        "district": "Lamjung",
+        "disabled": 0
+    },
+    {
+        "id": 40,
+        "district": "Mahottari",
+        "disabled": 0
+    },
+    {
+        "id": 41,
+        "district": "Makwanpur",
+        "disabled": 0
+    },
+    {
+        "id": 42,
+        "district": "Manang",
+        "disabled": 0
+    },
+    {
+        "id": 43,
+        "district": "Morang",
+        "disabled": 0
+    },
+    {
+        "id": 44,
+        "district": "Mugu",
+        "disabled": 0
+    },
+    {
+        "id": 45,
+        "district": "Mustang",
+        "disabled": 0
+    },
+    {
+        "id": 46,
+        "district": "Myagdi",
+        "disabled": 0
+    },
+    {
+        "id": 47,
+        "district": "Nawalparasi",
+        "disabled": 0
+    },
+    {
+        "id": 48,
+        "district": "Nuwakot",
+        "disabled": 0
+    },
+    {
+        "id": 49,
+        "district": "Okhaldhunga",
+        "disabled": 0
+    },
+    {
+        "id": 50,
+        "district": "Palpa",
+        "disabled": 0
+    },
+    {
+        "id": 51,
+        "district": "Panchthar",
+        "disabled": 0
+    },
+    {
+        "id": 52,
+        "district": "Parbat",
+        "disabled": 0
+    },
+    {
+        "id": 53,
+        "district": "Parsa",
+        "disabled": 0
+    },
+    {
+        "id": 54,
+        "district": "Pyuthan",
+        "disabled": 0
+    },
+    {
+        "id": 55,
+        "district": "Ramechhap",
+        "disabled": 0
+    },
+    {
+        "id": 56,
+        "district": "Rasuwa",
+        "disabled": 0
+    },
+    {
+        "id": 57,
+        "district": "Rautahat",
+        "disabled": 0
+    },
+    {
+        "id": 58,
+        "district": "Rolpa",
+        "disabled": 0
+    },
+    {
+        "id": 59,
+        "district": "Rukum",
+        "disabled": 0
+    },
+    {
+        "id": 60,
+        "district": "Rupandehi",
+        "disabled": 0
+    },
+    {
+        "id": 61,
+        "district": "Salyan",
+        "disabled": 0
+    },
+    {
+        "id": 62,
+        "district": "Sankhuwasabha",
+        "disabled": 0
+    },
+    {
+        "id": 63,
+        "district": "Saptari",
+        "disabled": 0
+    },
+    {
+        "id": 64,
+        "district": "Sarlahi",
+        "disabled": 0
+    },
+    {
+        "id": 65,
+        "district": "Sindhuli",
+        "disabled": 0
+    },
+    {
+        "id": 66,
+        "district": "Sindhupalchok",
+        "disabled": 0
+    },
+    {
+        "id": 67,
+        "district": "Siraha",
+        "disabled": 0
+    },
+    {
+        "id": 68,
+        "district": "Solukhumbu",
+        "disabled": 0
+    },
+    {
+        "id": 69,
+        "district": "Sunsari",
+        "disabled": 0
+    },
+    {
+        "id": 70,
+        "district": "Surkhet",
+        "disabled": 0
+    },
+    {
+        "id": 71,
+        "district": "Syangja",
+        "disabled": 0
+    },
+    {
+        "id": 72,
+        "district": "Tanahun",
+        "disabled": 0
+    },
+    {
+        "id": 73,
+        "district": "Taplejung",
+        "disabled": 0
+    },
+    {
+        "id": 74,
+        "district": "Terathum",
+        "disabled": 0
+    },
+    {
+        "id": 75,
+        "district": "Udayapur",
+        "disabled": 0
+    }
+]
