@@ -1,5 +1,5 @@
 <?php 
-/*
+/* 
 A template of MultiSelect plugin, for PHP
 Written By: Arjun AdhiQari
 Github Repo: https://github.com/arjunadhikari789/MultiSelect.js

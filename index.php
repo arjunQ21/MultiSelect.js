@@ -1,5 +1,5 @@
 <?php 
-/*
+/*  
 Sample Usage of MultiSelect.js Plugin
 Written By: Arjun AdhiQari
 Github Repo: https://github.com/arjunadhikari789/MultiSelect.js

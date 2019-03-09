@@ -65,6 +65,6 @@ class MultiSelect
 	public function render(){
 		$mst = array_merge( \ArjunAdhiQari\MultiSelect::$defaultMs , $this->toArray() );
 		require __DIR__."/ms_template.php" ;
-	}
+	} 
 
 }
