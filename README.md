@@ -19,7 +19,7 @@ You can try implementing this plugin for other languages too, it's not that hard
    
  Creating new Instance:  
    
-    $ms = new MultiSelect( "msd" );  
+    $ms = new ArjunAdhiQari\MultiSelect( "msd" );  
 This string "msd" is the id of the multi-select div element and name of input tag, whose value can be sent to the server, from forms.
   
 Adding Title:  
@@ -70,15 +70,17 @@ The value of input tag is dynamically changed with javaScript from browser, once
   
   # FrontEnd Js
   The string "msd" passed above as an argument to the MultiSelect class, becomes a variable in javaScript. \
+  This variable is an instance of js class MultiSelect.
   This variable is scoped globally. 
   You can change colors from js too as:
     
     msd.color.background = 'red' ;
+    msd.forceColorUpdate() ;
     
   to get the array of chosen items dynamically in js, you can do as such:  
   
    
-    msd.chosen
+    var chosenItems = msd.chosen ;
   
   
   
