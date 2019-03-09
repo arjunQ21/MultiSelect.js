@@ -1,3 +1,14 @@
+<?php 
+/*
+A template of MultiSelect plugin, for PHP
+Written By: Arjun AdhiQari
+Github Repo: https://github.com/arjunadhikari789/MultiSelect.js
+Written Date: 3-8-2019
+License: Free for Everyone
+:)
+NOTE: This Plugin requires HTML, css, js and PHP files too.
+*/
+?>
 <div class="multi-select" data-sn = "1" id = '<?=$mst['id']?>' <?php 
 	if( ! is_null($mst['max'])) echo " data-max = '".$mst['max']."'";
 	if( ! is_null($mst['min'])) echo " data-min = '".$mst['min']."'";

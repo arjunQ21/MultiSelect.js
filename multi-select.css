@@ -1,6 +1,12 @@
-body{
-	font-family: sans-serif; ;
-}
+/*
+Style for MultiSelect.js plugin 
+Written By: Arjun AdhiQari
+Github Repo: https://github.com/arjunadhikari789/MultiSelect.js
+Written Date: 3-8-2019
+License: Free for Everyone
+:)
+NOTE: This Plugin requires HTML, js and PHP files too.
+*/
 div.multi-select{
 	margin: 10px 0px;
 	border: 1px solid #bbb ;

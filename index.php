@@ -1,4 +1,13 @@
 <?php 
+/*
+Sample Usage of MultiSelect.js Plugin
+Written By: Arjun AdhiQari
+Github Repo: https://github.com/arjunadhikari789/MultiSelect.js
+Written Date: 3-8-2019
+License: Free for Everyone
+:)
+NOTE: This Plugin requires HTML, css and js files too.
+*/
 require_once "MultiSelect.php" ;
 $districts = array_column(json_decode(file_get_contents("districts.json"), true ), 'district');
 $interests = array_column(json_decode(file_get_contents("interests.json"), true ), 'interest');
@@ -14,16 +23,22 @@ $interests = array_column(json_decode(file_get_contents("interests.json"), true 
 </head>
 <body>
 
-<?php 
+<p>Simple Use, Has some already chosen items, and color is changed too.</p>
 
-$ms = new MultiSelect( "ms" );
+<?php 
+$ms = new ArjunAdhiQari\MultiSelect( "ms" );
 $ms->title = "Select Districts" ;
 $ms->data = $districts ;
 $ms->color = ['selected'=>'#f05', 'background'=>'pink'];
 $ms->chosen = [ 2, 5, 'arjun'];
 $ms->render() ;
+?>
 
-$int = new MultiSelect( 'int' );
+
+<p>Another Sample, has maximum limit and changed color.</p>
+
+<?php
+$int = new ArjunAdhiQari\MultiSelect( 'int' );
 $int->title = "Select Interests: ";
 $int->data = $interests ;
 $int->color = ['background'=>'#E4AD4A','selected'=>'#A06B0B'] ;

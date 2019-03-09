@@ -1,4 +1,14 @@
 <?php
+namespace ArjunAdhiQari ;
+/*
+JavaScript Plugin 
+Written By: Arjun AdhiQari
+Github Repo: https://github.com/arjunadhikari789/MultiSelect.js
+Written Date: 3-8-2019
+License: Free for Everyone
+:)
+NOTE: This Plugin requires HTML, css and Js files too.
+*/
 
 class MultiSelect
 {
@@ -53,7 +63,7 @@ class MultiSelect
 		return $arr ;
 	}
 	public function render(){
-		$mst = array_merge( Self::$defaultMs , $this->toArray() );
+		$mst = array_merge( \ArjunAdhiQari\MultiSelect::$defaultMs , $this->toArray() );
 		require __DIR__."/ms_template.php" ;
 	}
 
