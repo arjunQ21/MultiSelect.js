@@ -2,7 +2,8 @@
 JavaScript Plugin to select multiple options from a list  
 Written By: Arjun AdhiQari  
 Github Repo: https://github.com/arjunadhikari789/MultiSelect.js  
-Live Demo: https://arjunadhikari789.github.io/MultiSelect.js/
+Live Demo: https://arjunadhikari789.github.io/MultiSelect.js
+
 Written Date: 3-8-2019  
 License: Free for Everyone  
 :)  
