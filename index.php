@@ -21,8 +21,28 @@ $interests = array_column(json_decode(file_get_contents("interests.json"), true 
 	<meta name = 'viewport' content="width=device-width">
 	<script src='MultiSelect.js'></script>
 </head>
-<body>
-
+<body >
+	<style>
+	body{
+		font-family: Tahoma ;
+		margin: auto ;
+	}
+		p{
+			padding: 20px;
+			font-size: 150%;
+		}
+		div.multi-select{
+			margin: auto !important ;
+		}
+		h2, p{
+			color: #666;
+			padding: 10px;
+		}
+		h2{
+			margin: 10px 0 20px 0;
+		}
+	</style>
+<h2>Demo of "MulitSelect.js" plugin by Arjun Adhikari.<br>Github Repo: <a href='https://github.com/arjunadhikari789/MultiSelect.js'>github.com/arjunadhikari789/MultiSelect.js</a></h2>
 <p>Simple Use, Has some already chosen items, and color is changed too.</p>
 
 <?php 

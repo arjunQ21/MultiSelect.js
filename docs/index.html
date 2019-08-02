@@ -2,6 +2,7 @@
 See Branch "master" for real usage. This branch "live-demo" is just created to show this demo. -->
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,26 +12,34 @@ See Branch "master" for real usage. This branch "live-demo" is just created to s
 	<meta name = 'viewport' content="width=device-width">
 	<script src='MultiSelect.js'></script>
 </head>
+<body >
 	<style>
-		
-		h2{
-			padding: 10px;
-			text-align: center ;
+	body{
+		font-family: Tahoma ;
+		margin: auto ;
+	}
+		p{
+			padding: 20px;
+			font-size: 150%;
 		}
-		body{
-			display: flex ;
-			align-items: center ;
-			justify-content: center ;
-			flex-wrap: wrap ;
+		div.multi-select{
+			margin: auto !important ;
+		}
+		h2, p{
+			color: #666;
+			padding: 10px;
+		}
+		h2{
+			margin: 10px 0 20px 0;
 		}
 	</style>
-<body>
-<h2>Sample 1: </h2>
+<h2>Demo of "MulitSelect.js" plugin by Arjun Adhikari.<br>Github Repo: <a href='https://github.com/arjunadhikari789/MultiSelect.js'>github.com/arjunadhikari789/MultiSelect.js</a></h2>
+<p>Simple Use, Has some already chosen items, and color is changed too.</p>
 
-<div class="multi-select" data-sn = "1" id = 'mo'  >
+<div class="multi-select" data-sn = "1" id = 'ms'  >
 	<div class="ms-title">
 		<div class="ms-title-text">
-			<span>Select Occupations</span>
+			<span>Select Districts</span>
 		</div>
 		<div class="ms-title-right">
 			<div class="ms-select-all">
@@ -43,272 +52,539 @@ See Branch "master" for real usage. This branch "live-demo" is just created to s
 		</div>
 	</div>
 	<div class="ms-items">
-								<div class="ms-option" data-chosen = '0' data-value = '0'>
+								<div class="ms-option" data-chosen = '1' data-value = '0'>
 				<div class="ms-option-text">
-					Broker				</div>
+					Achham				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '1'>
 				<div class="ms-option-text">
-					Chemist				</div>
+					Arghakhanchi				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '1' data-value = '2'>
 				<div class="ms-option-text">
-					Cobbler				</div>
+					Baglung				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '3'>
 				<div class="ms-option-text">
-					Composer				</div>
+					Baitadi				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '4'>
 				<div class="ms-option-text">
-					Conductor				</div>
+					Bajhang				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '1' data-value = '5'>
 				<div class="ms-option-text">
-					Cook				</div>
+					Bajura				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '6'>
 				<div class="ms-option-text">
-					Dancer				</div>
+					Banke				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '7'>
 				<div class="ms-option-text">
-					Dentist				</div>
+					Bara				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '8'>
 				<div class="ms-option-text">
-					Doctor				</div>
+					Bardiya				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '9'>
 				<div class="ms-option-text">
-					Engineer				</div>
+					Bhaktapur				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '10'>
 				<div class="ms-option-text">
-					Farmer				</div>
+					Bhojpur				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '11'>
 				<div class="ms-option-text">
-					Gardener				</div>
+					Chitwan				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '12'>
 				<div class="ms-option-text">
-					Inspector				</div>
+					Dadeldhura				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '13'>
 				<div class="ms-option-text">
-					Magician				</div>
+					Dailekh				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '14'>
 				<div class="ms-option-text">
-					Manager				</div>
+					Dang Deukhuri				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '15'>
 				<div class="ms-option-text">
-					Nursing				</div>
+					Darchula				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '16'>
 				<div class="ms-option-text">
-					Painter				</div>
+					Dhading				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '17'>
 				<div class="ms-option-text">
-					Peon				</div>
+					Dhankuta				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '18'>
 				<div class="ms-option-text">
-					Photographer				</div>
+					Dhanusa				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '19'>
 				<div class="ms-option-text">
-					Physician				</div>
+					Dolakha				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '20'>
 				<div class="ms-option-text">
-					Physicist				</div>
+					Dolpa				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '21'>
 				<div class="ms-option-text">
-					Pilot				</div>
+					Doti				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '22'>
 				<div class="ms-option-text">
-					Politician				</div>
+					Gorkha				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '23'>
 				<div class="ms-option-text">
-					Postman				</div>
+					Gulmi				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '24'>
 				<div class="ms-option-text">
-					Potter				</div>
+					Humla				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '25'>
 				<div class="ms-option-text">
-					Priest				</div>
+					Ilam				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '26'>
 				<div class="ms-option-text">
-					Proprietor				</div>
+					Jajarkot				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '27'>
 				<div class="ms-option-text">
-					Sailor				</div>
+					Jhapa				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '28'>
 				<div class="ms-option-text">
-					Sculptor				</div>
+					Jumla				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '29'>
 				<div class="ms-option-text">
-					Shopkeeper				</div>
+					Kailali				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '30'>
 				<div class="ms-option-text">
-					Singer				</div>
+					Kalikot				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '31'>
 				<div class="ms-option-text">
-					Surgeon				</div>
+					Kanchanpur				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '32'>
 				<div class="ms-option-text">
-					Teacher				</div>
+					Kapilvastu				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '33'>
 				<div class="ms-option-text">
-					Treasurer				</div>
+					Kaski				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '34'>
 				<div class="ms-option-text">
-					Waiter				</div>
+					Kathmandu				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '35'>
 				<div class="ms-option-text">
-					Web Developer				</div>
+					Kavrepalanchok				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 								<div class="ms-option" data-chosen = '0' data-value = '36'>
 				<div class="ms-option-text">
-					Writer				</div>
+					Khotang				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '37'>
+				<div class="ms-option-text">
+					Lalitpur				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '38'>
+				<div class="ms-option-text">
+					Lamjung				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '39'>
+				<div class="ms-option-text">
+					Mahottari				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '40'>
+				<div class="ms-option-text">
+					Makwanpur				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '41'>
+				<div class="ms-option-text">
+					Manang				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '42'>
+				<div class="ms-option-text">
+					Morang				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '43'>
+				<div class="ms-option-text">
+					Mugu				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '44'>
+				<div class="ms-option-text">
+					Mustang				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '45'>
+				<div class="ms-option-text">
+					Myagdi				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '46'>
+				<div class="ms-option-text">
+					Nawalparasi				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '47'>
+				<div class="ms-option-text">
+					Nuwakot				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '48'>
+				<div class="ms-option-text">
+					Okhaldhunga				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '49'>
+				<div class="ms-option-text">
+					Palpa				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '50'>
+				<div class="ms-option-text">
+					Panchthar				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '51'>
+				<div class="ms-option-text">
+					Parbat				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '52'>
+				<div class="ms-option-text">
+					Parsa				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '53'>
+				<div class="ms-option-text">
+					Pyuthan				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '54'>
+				<div class="ms-option-text">
+					Ramechhap				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '55'>
+				<div class="ms-option-text">
+					Rasuwa				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '56'>
+				<div class="ms-option-text">
+					Rautahat				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '57'>
+				<div class="ms-option-text">
+					Rolpa				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '58'>
+				<div class="ms-option-text">
+					Rukum				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '59'>
+				<div class="ms-option-text">
+					Rupandehi				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '60'>
+				<div class="ms-option-text">
+					Salyan				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '61'>
+				<div class="ms-option-text">
+					Sankhuwasabha				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '62'>
+				<div class="ms-option-text">
+					Saptari				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '63'>
+				<div class="ms-option-text">
+					Sarlahi				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '64'>
+				<div class="ms-option-text">
+					Sindhuli				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '65'>
+				<div class="ms-option-text">
+					Sindhupalchok				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '66'>
+				<div class="ms-option-text">
+					Siraha				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '67'>
+				<div class="ms-option-text">
+					Solukhumbu				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '68'>
+				<div class="ms-option-text">
+					Sunsari				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '69'>
+				<div class="ms-option-text">
+					Surkhet				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '70'>
+				<div class="ms-option-text">
+					Syangja				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '71'>
+				<div class="ms-option-text">
+					Tanahun				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '72'>
+				<div class="ms-option-text">
+					Taplejung				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '73'>
+				<div class="ms-option-text">
+					Terathum				</div>
+				<div class="ms-option-icon">
+					<i class="fas fa-check"></i>
+				</div>
+			</div>
+								<div class="ms-option" data-chosen = '0' data-value = '74'>
+				<div class="ms-option-text">
+					Udayapur				</div>
 				<div class="ms-option-icon">
 					<i class="fas fa-check"></i>
 				</div>
 			</div>
 			</div>
 </div>
-<input type='hidden' name='mo' value = ''>
+<input type='hidden' name='ms' value = ''>
 <script>
-	var mo = new MultiSelect( 'mo', {"selected":"#f05","background":"pink"} );
+	var ms = new MultiSelect( 'ms', {"selected":"#f05","background":"pink"} );
 </script>
-<h2>Sample 2: </h2>
+
+<p>Another Sample, has maximum limit and changed color.</p>
 
 <div class="multi-select" data-sn = "1" id = 'int'  data-max = '2' >
 	<div class="ms-title">
@@ -681,5 +957,6 @@ See Branch "master" for real usage. This branch "live-demo" is just created to s
 <input type='hidden' name='int' value = ''>
 <script>
 	var int = new MultiSelect( 'int', {"background":"#E4AD4A","selected":"#A06B0B"} );
-</script></body>
+</script>
+</body>
 </html>
